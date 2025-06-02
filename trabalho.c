@@ -3,19 +3,20 @@
 int main (){
     
     
-    char leter1 = 'A', leter2 = 'B';
+    char estado1 [20] = "Parana", estado2 [20] = "Parana";
+    char letra1 = 'A', letra2 = 'B';
     int carta1 = 01, carta2 =02;
     char nome_cidade1 [20] = "Curitiba", nome_cidade2 [20] = "Sao jose";
-    int populacao1 = 100000000, populacao2 = 100000;
-    float area1 = 3042.20, area2 = 6542.1;
-    float PIB1 = 1.8, PIB2 = 1.9;
-    int pontos_turisticos1 = 20, pontos_turisticos2 = 50;
+    int populacao1 = 1773733, populacao2 = 337248;
+    float area1 = 434.892, area2 = 945.717;
+    float PIB1 = 63.3, PIB2 = 20.6;
+    int pontos_turisticos1 = 40, pontos_turisticos2 = 15;
 
     printf ("coloque a letra da primeira carta\n");
-    scanf (" %c", &leter1);
+    scanf (" %c", &letra1);
 
     printf ("coloque a letra da segunda carta\n");
-    scanf (" %c", &leter2);
+    scanf (" %c", &letra2);
 
     printf ("numero da primeira carta\n");
     scanf (" %d", &carta1);
@@ -53,13 +54,38 @@ int main (){
     printf ("quantidade de pontos turisticos da segunda cidade\n");
     scanf (" %d", &pontos_turisticos2);
 
-    printf ("Carta %d (%c) - Cidade: %s - População: %d - Area: %f - PIB: %f - Pontos turisticos: %d\n", carta1, leter1, nome_cidade1, populacao1, area1, PIB1, pontos_turisticos1);
+    printf ("Carta %d (%c) - Cidade: %s - População: %d - Area: %f - PIB: %f - Pontos turisticos: %d\n", carta1, letra1, nome_cidade1, populacao1, area1, PIB1, pontos_turisticos1);
 
-    printf ("Carta %d (%c) - Cidade: %s - População: %d - Area: %f - PIB: %f - Pontos turisticos: %d\n", carta2, leter2, nome_cidade2, populacao2, area2, PIB2, pontos_turisticos2);
+    printf ("Carta %d (%c) - Cidade: %s - População: %d - Area: %f - PIB: %f - Pontos turisticos: %d\n", carta2, letra2, nome_cidade2, populacao2, area2, PIB2, pontos_turisticos2);
+
+    if (populacao1 > populacao2){
+        printf ("população da cidade 1 ganhou!!\n");
+    }  else {
+        printf ("população da cidade 2 ganhou!!\n");
+    }
+    if (area1 > area2){
+        printf ("Area da cidade 1 ganhou!!\n");
+    } else {
+        printf ("Area da cidade 2 ganhou!!\n");
+    }
+    if (PIB1 > PIB2){
+        printf ("PIB da cidade 1 e maior e ganhou!!\n");
+    } else {
+        printf ("PIB da cidade 2 e maior e ganhou!!\n");
+    }
+    if (pontos_turisticos1 > pontos_turisticos2){
+        printf ("A cidade 1 tem mais pontos turisticos e ganhou!!\n");
+    } else {
+        printf ("A cidade 2 tem mais pontos turisticos e ganhou!!\n");
+    }
+    
+    
+    
+
 
  
 return 0;
 
-
+    
 
 }
